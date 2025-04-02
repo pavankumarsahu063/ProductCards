@@ -34,8 +34,9 @@ document.addEventListener("DOMContentLoaded",async ()=>{
     
     // document.querySelector(".btn").style.margin="20px";
     let nextBtn=document.createElement("button").innerText="Next";
+    nextBtn.className="btn";
 
-    div.append(prevBtn,nextBtn);
+    document.body.append(prevBtn,nextBtn)
     
 })
 
