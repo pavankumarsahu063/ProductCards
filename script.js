@@ -15,17 +15,15 @@ document.addEventListener("DOMContentLoaded",async ()=>{
     
     
     currPage.forEach(element => {
-        
         console.log(element);
-        
-       
-        
-
-        
         let card=document.createElement("div");
         card.className="cards";
         card.innerHTML=`
-        <h1 class='title'>${element.title}</h1>`
+        <img class="imgs" src="${element.image}" alt="images">
+        <h1 class='title'>${element.title}</h1>
+        <h1 class="price">${element.price}</h1>
+        
+        `
         div.appendChild(card);
 
         
@@ -34,7 +32,7 @@ document.addEventListener("DOMContentLoaded",async ()=>{
     let prevBtn=document.createElement("button").innerText="prev";
     prevBtn.className="btn";
     
-    document.querySelector(".btn").style.margin="20px";
+    // document.querySelector(".btn").style.margin="20px";
     let nextBtn=document.createElement("button").innerText="Next";
 
     div.append(prevBtn,nextBtn);
